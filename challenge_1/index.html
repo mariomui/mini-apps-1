@@ -1,2 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>change</title>
+  <link href="./src/main.css" rel="stylesheet">"
+</head>
+<body>
+    <div id='app'></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
+<script> 
+ document.addEventListener.on('DOMContentLoaded', () => {
+      document.getElementsByClassName('square')
+      .forEach(item => {
+        console.log(item);
+      });
+    })
+</script>
+  <script>
+   
+  
+    const ce = React.createElement;
+    // const sampFunc = function (props) {
+    //   return ce(
+    //     'tr',
+    //     null, ce('td', { style: {color: props.color } }, props.title),
+    //   );
+    // };
+    const Square = function() {
+      return (
+        ce('div', {className: 'else'}, 
+          ce('button', {className: 'square'}),
+          ce('button', {className: 'square'}),
+          ce('button', {className: 'square'}),
+        )
+      );
+    }
+    // const myFirstComponent = function () {
+    //   return (
+    //     ce('table', {className: 'game'}, 
+    //       ce(Square, {color: 'green', title: 'props'}),
+    //       ce(Square, {color: 'blue', title: 'test'}),
+    //     )
+    //   );
+    // }
+    const myFirstComponent = function () {
+      return (
+        ce('div', {className: 'game'}, 
+          ce(Square, {color: 'green', title: '1'}),
+          ce(Square, {color: 'blue', title: '2'}),
+          ce(Square, {color: 'blue', title: '3'}),
 
+        )
+      );
+    }
+  
+
+   ReactDOM.render(ce(myFirstComponent), document.getElementById('app'));
+   </script>
+  <!-- <script src='./src/app.js'></script> -->
+</body>
+</html>

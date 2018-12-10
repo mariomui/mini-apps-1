@@ -1,0 +1,15 @@
+.grid {
+  display: flex;
+}
+
+.else {
+  display: flex;
+  flex-direction: row;
+}
+.square {
+  display: flex;
+  border: 1px solid black;
+  height: 10em;
+  width: 10em;
+}
+
